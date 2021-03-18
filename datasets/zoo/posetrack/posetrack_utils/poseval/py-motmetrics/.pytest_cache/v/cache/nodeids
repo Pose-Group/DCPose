@@ -1,0 +1,15 @@
+[
+  "motmetrics/tests/test_distances.py::test_norm2squared", 
+  "motmetrics/tests/test_distances.py::test_norm2squared_empty", 
+  "motmetrics/tests/test_distances.py::test_iou_matrix", 
+  "motmetrics/tests/test_io.py::test_load_vatic", 
+  "motmetrics/tests/test_io.py::test_load_motchallenge", 
+  "motmetrics/tests/test_metrics.py::test_metricscontainer_1", 
+  "motmetrics/tests/test_metrics.py::test_metricscontainer_autodep", 
+  "motmetrics/tests/test_metrics.py::test_metricscontainer_autoname", 
+  "motmetrics/tests/test_metrics.py::test_motchallenge_files", 
+  "motmetrics/tests/test_mot.py::test_events", 
+  "motmetrics/tests/test_mot.py::test_max_switch_time", 
+  "motmetrics/tests/test_mot.py::test_auto_id", 
+  "motmetrics/tests/test_mot.py::test_correct_average"
+]

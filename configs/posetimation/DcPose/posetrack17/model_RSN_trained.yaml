@@ -1,0 +1,50 @@
+_BASE_: "../Base_PoseTrack17.yaml"
+EXPERIMENT_NAME: 'DCPose_Network_Model_RSN'
+WORKERS: 2
+GPUS: (0,1)
+OUTPUT_DIR: './output/PE/DcPose/'
+CUDNN:
+  BENCHMARK: true
+  DETERMINISTIC: true
+  ENABLED: true
+CORE_FUNCTION: CommonFunction
+
+MODEL:
+  NAME: DcPose_RSN
+
+  USE_PRF: true
+  PRF_BASICBLOCK_NUM: 2
+  PRF_INNER_CH: 34
+
+  USE_PTM: true
+  PTM_BASICBLOCK_NUM: 1
+  PTM_INNER_CH: 17
+
+  USE_PCN: true
+  PRF_PTM_COMBINE_BASICBLOCK_NUM: 2
+  PRF_PTM_COMBINE_INNER_CH: 64
+
+  DEFORMABLE_CONV:
+    DILATION:
+      - 3
+      - 6
+      - 9
+      - 12
+      - 15
+    AGGREGATION_TYPE: weighted_sum
+LOSS:
+  USE_TARGET_WEIGHT: true
+
+TRAIN:
+  AUTO_RESUME: true
+  SAVE_MODEL_PER_EPOCH: 1
+  BATCH_SIZE_PER_GPU: 32
+VAL:
+  BATCH_SIZE_PER_GPU: 64
+  MODEL_FILE: 'DcPose_supp_files/pretrained_models/DCPose/PoseTrack17_DCPose.pth'
+TEST:
+  BATCH_SIZE_PER_GPU: 64
+  MODEL_FILE: 'DcPose_supp_files/pretrained_models/DCPose/PoseTrack17_DCPose.pth'
+DEBUG:
+  VIS_SKELETON: false
+  VIS_BBOX: false
