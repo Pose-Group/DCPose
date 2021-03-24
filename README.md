@@ -1,5 +1,5 @@
 # Deep Dual Consecutive Network for Human Pose Estimation （CVPR2021）
-
+[Paper](https://arxiv.org/abs/2103.07254)
 ## Introduction
 
 This is the official code of **Deep Dual Consecutive Network for Human Pose Estimation.**
