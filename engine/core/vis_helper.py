@@ -5,8 +5,9 @@ from random import random
 import os.path as osp
 
 from utils.utils_image import read_image, save_image
-from datasets.process import coco2posetrack_ord_infer
-from datasets.zoo.posetrack import POSETRACK_joint_pairs, POSETRACK_joint, COLOR_DICT, POSETRACK_joint_name_color
+from datasets.process.keypoints_ord import coco2posetrack_ord_infer
+from datasets.zoo.posetrack.pose_skeleton import PoseTrack_Official_Keypoint_Ordering, PoseTrack_Keypoint_Pairs
+from utils.utils_color import COLOR_DICT
 
 
 def draw_skeleton_in_origin_image(batch_image_list, batch_joints_list, batch_bbox_list, save_dir, vis_skeleton=True, vis_bbox=True):
@@ -73,11 +74,10 @@ def add_bbox_in_image(image, bbox):
     return image_with_bbox
 
 
-
 def add_poseTrack_joint_connection_to_image(img_demo, joints, sure_threshold=0.8, flag_only_draw_sure=False, ):
-    for joint_pair in POSETRACK_joint_pairs:
-        ind_1 = POSETRACK_joint.index(joint_pair[0])
-        ind_2 = POSETRACK_joint.index(joint_pair[1])
+    for joint_pair in PoseTrack_Keypoint_Pairs:
+        ind_1 = PoseTrack_Official_Keypoint_Ordering.index(joint_pair[0])
+        ind_2 = PoseTrack_Official_Keypoint_Ordering.index(joint_pair[1])
 
         color = COLOR_DICT[joint_pair[2]]
 

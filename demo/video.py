@@ -9,7 +9,7 @@ sys.path.insert(0, osp.abspath('../'))
 from tqdm import tqdm
 import logging
 
-from datasets.process.structure.keypoints_ord import coco2posetrack_ord_infer
+from datasets.process.keypoints_ord import coco2posetrack_ord_infer
 from tools.inference import inference_PE
 from object_detector.YOLOv3.detector_yolov3 import inference_yolov3
 from utils.utils_folder import list_immediate_childfile_paths, create_folder
