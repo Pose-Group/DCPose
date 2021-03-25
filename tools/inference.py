@@ -30,7 +30,7 @@ def parse_args():
     parser.add_argument('--PE_Name', help='pose estimation model name', required=False, type=str,
                         default='DcPose')
     parser.add_argument('-weight', help='model weight file', required=False, type=str
-                        , default='./DcPose_supp_files/pretrained_models/DCPose/DCPose.pth')
+                        , default='./DcPose_supp_files/pretrained_models/DCPose/PoseTrack17_DCPose.pth')
     parser.add_argument('--gpu_id', default='0')
     parser.add_argument('opts', help="Modify config options using the command-line", default=None, nargs=argparse.REMAINDER)
 
