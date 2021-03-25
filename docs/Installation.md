@@ -35,8 +35,9 @@ python setup.py develop
 
 
 
-4.Download our pretrained models and [supplementary](https://drive.google.com/drive/folders/1VPcwo9jVhnJpf5GVwR2-za1PFE6bCOXE?usp=sharing) .Put it in the directory `${DCPose_SUPP_DIR}`. (Note that our pre-train models will be released soon later.)
-> We can provide part of model, but dissemination is strictly forbidden. Contact us: chenhaomingbob@gmail.com
+4.Download our [pretrained models and supplementary](https://drive.google.com/drive/folders/1VPcwo9jVhnJpf5GVwR2-za1PFE6bCOXE?usp=sharing) .Put it in the directory `${DCPose_SUPP_DIR}`. (Note that part of the pre-trained models are available, and more pre-train models will be released soon later.)
+ 
+
 ### Data preparation
 
 First, create a folder `${DATASET_DIR}`  to store the data of PoseTrack17 and PoseTrack18.
