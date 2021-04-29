@@ -1,5 +1,4 @@
 # Deep Dual Consecutive Network for Human Pose Estimation （CVPR2021）
-[Paper](https://arxiv.org/abs/2103.07254)
 ## Introduction
 
 This is the official code of **Deep Dual Consecutive Network for Human Pose Estimation.**
@@ -112,4 +111,14 @@ Multi-frame human pose estimation in complicated situations is challenging. Alth
 
 **Check** [docs/installation.md](docs/Installation.md) for instructions on how to build DCPose from source.
 
-
+# Citation
+```
+@misc{liu2021deep,
+      title={Deep Dual Consecutive Network for Human Pose Estimation}, 
+      author={Zhenguang Liu and Haoming Chen and Runyang Feng and Shuang Wu and Shouling Ji and Bailin Yang and Xun Wang},
+      year={2021},
+      eprint={2103.07254},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
