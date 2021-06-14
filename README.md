@@ -113,10 +113,12 @@ Multi-frame human pose estimation in complicated situations is challenging. Alth
 
 # Citation
 ```
-@inproceedings{liu2021deep,
-      title={Deep Dual Consecutive Network for Human Pose Estimation}, 
-      author={Zhenguang Liu and Haoming Chen and Runyang Feng and Shuang Wu and Shouling Ji and Bailin Yang and Xun Wang},
-      booktitle={CVPR},
-      year={2021}
+@InProceedings{Liu_2021_CVPR,
+    author    = {Liu, Zhenguang and Chen, Haoming and Feng, Runyang and Wu, Shuang and Ji, Shouling and Yang, Bailin and Wang, Xun},
+    title     = {Deep Dual Consecutive Network for Human Pose Estimation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {525-534}
 }
 ```
